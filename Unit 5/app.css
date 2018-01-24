@@ -1,0 +1,20 @@
+h1 {
+	color: rgba(0,200,100,.8);
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 2px solid rgb(255,100,80)
+}
+
+h4 {
+	background: rgb(255,100,80);
+}
+
+body {
+	background: pink;
+/*	background: url(https://wallpapertag.com/wallpaper/middle/1/b/a/538091-wood-grain-desktop-wallpaper-2560x1600-notebook.jpg#.Wmjbu4CGvnw.link);
+	background-repeat: no-repeat;
+	background-size: cover; */
+}
+

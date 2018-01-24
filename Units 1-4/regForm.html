@@ -13,22 +13,27 @@
 			<label for="lastName">Last Name</label>
 			<input id="lastName" type="lastName" name="lastName" placeholder="Smith" required="">
 		</div>
-			<div class="gender">
+		<div class="gender">
 			<label for="male">Male</label>
 			<input id="male" type="radio" name="genderChoice" value="MALE">
 			<label for="female">Female</label>
 			<input id="female" type="radio" name="genderChoice" value="FEMALE">
 		</div>
 		<div class="emailPASS">
-			<label for="user-email">Email:</label>
-			<input id="user-email" type="email" name="username" placeholder="email" required="">
+			<label>
+			Email:
+				<input id="user-email" type="email" name="username" placeholder="email" required="">
+			</label>
 
-			<label for="password">Password:</label>
-			<input type="password" name="password" id="password" placeholder="password" required="">
+			<label>
+			Password:
+				<input type="password" name="password" id="password" placeholder="password" pattern=".{5,10}" required title="Password must be 5 to 10 characters">
+			</label>
 		</div>
 
 		<div class="birthday">
-			<label for="birthday">Birthday</label>
+			<label for="birthday">
+			Birthday:
 			<select name="month">
 				<option value="month">Month</option>
 				<option value="January">January</option>
@@ -92,6 +97,7 @@
 				<option value="1989">1989</option>
 				<option value="1990">1990</option>
 			</select>
+			</label>
 		</div>
 		
 		<div class="terms">
