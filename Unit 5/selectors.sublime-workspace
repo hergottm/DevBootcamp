@@ -1,0 +1,257 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Hab",
+				"HabitatFundraiser"
+			],
+			[
+				"OHM",
+				"OHMCharityFashionShow"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 59.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/new/HabitatFundraiser/view_cart.asp",
+		"/Volumes/new/cart/Habitat_sale.asp",
+		"/Volumes/new/cart/Habitat_registration.asp",
+		"/Volumes/new/HabitatFundraiser/cart_include.asp",
+		"/Volumes/new/HabitatFundraiser/item_registration.asp",
+		"/Volumes/new/HabitatFundraiser/thankyou.asp",
+		"/Volumes/new/HabitatFundraiser/summary.php",
+		"/Volumes/new/HabitatFundraiser/update_cart.asp",
+		"/Volumes/new/HabitatFundraiser/index.asp",
+		"/Volumes/new/FoodForThought/summary.php",
+		"/Volumes/new/Psychology Association - Sweaters/thankyou.asp",
+		"/Volumes/new/OHMCharityFashionShow/donation_thankyou.asp",
+		"/Volumes/new/OHMCharityFashionShow/index.asp",
+		"/Volumes/new/OHMCharityFashionShow/donation_cart.asp",
+		"/Volumes/new/OHMCharityFashionShow/view_cart.asp",
+		"/Volumes/new/OHMCharityFashionShow/update_cart.asp",
+		"/Volumes/new/cart/OHMCharityFashionShow_sale.asp",
+		"/Volumes/new/cart/OHMCharityFashionShow.asp",
+		"/Users/imatt/Desktop/DevBootcamp/Unit 5/todoList.html",
+		"/Users/imatt/Desktop/DevBootcamp/Unit 5/todos.css",
+		"/Users/imatt/Desktop/DevBootcamp/Unit 5/aboutMe.html",
+		"/Users/imatt/Desktop/DevBootcamp/Unit 5/app.css",
+		"/Users/imatt/Desktop/DevBootcamp/HTML/regForm.html",
+		"/Users/imatt/Library/Application Support/Sublime Text 3/Packages/User/chrome.sublime-build",
+		"/Users/imatt/Library/Application Support/Sublime Text 3/Packages/User/Chrome.sublime-build",
+		"/Volumes/new/_test_maya/index.asp",
+		"/Users/imatt/Desktop/DevBootCamp/forms.html",
+		"/Users/imatt/Desktop/DevBootCamp/pokemon.html",
+		"/Users/imatt/Desktop/DevBootCamp/firstPage.html",
+		"/Users/imatt/Desktop/DevBootCamp/quiz2.html",
+		"/Users/imatt/Desktop/DevBootCamp/quiz1.html",
+		"/Users/imatt/Desktop/FCC Tribute/index.html",
+		"/Volumes/new/cart/FoodForThought_registration.asp",
+		"/Volumes/new/cart/FoodForThought_sale.asp",
+		"/Volumes/new/FoodForThought/view_cart.asp",
+		"/Volumes/new/FoodForThought/thankyou.asp",
+		"/Volumes/new/FoodForThought/item_registration.asp",
+		"/Volumes/new/FoodForThought/incomplete.asp",
+		"/Volumes/new/FoodForThought/cart_include.asp",
+		"/Volumes/new/FoodForThought/update_cart.asp",
+		"/Volumes/new/FoodForThought/empty_cart.asp",
+		"/Volumes/new/FoodForThought/index.asp",
+		"/Volumes/new/WHIMUN/index.asp",
+		"/Users/imatt/Desktop/index.html",
+		"/Volumes/new/airport-shuttle/index.asp"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 56.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Chrome.sublime-build",
+	"project": "selectors.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
