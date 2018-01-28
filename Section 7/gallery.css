@@ -1,0 +1,64 @@
+body {
+	padding-top: 70px;
+}
+
+.jumbotron {
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+
+.navbar-inverse {
+background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.image1 {
+	background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=1350&q=80);
+}
+
+.image5 {
+	background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a00dd14dd25d32b799b8e6e0270fd535&auto=format&fit=crop&w=1504&q=80);
+}
+
+.image3 {
+	background-image: url(https://images.unsplash.com/photo-1485832329521-e944d75fa65e?ixlib=rb-0.3.5&s=e2da2e29d8108c9ea598807f77045d5f&auto=format&fit=crop&w=1500&q=80);
+}
+
+.image4 {
+	background-image: url(https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=428468d8a8b3842450b4f54a173f2622&auto=format&fit=crop&w=1502&q=80);
+}
+
+.image2 {
+	background-image: url(https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?ixlib=rb-0.3.5&s=a19c5247f5c0f40b43b63e3ecc9ca16d&auto=format&fit=crop&w=1950&q=80);
+}
+
+.image6 {
+	background-image: url(https://images.unsplash.com/photo-1516382022989-cd771ab91fb1?ixlib=rb-0.3.5&s=5135e3302eb08c7946561da6e1ccbc3e&auto=format&fit=crop&w=967&q=80);
+}
+
+.image7 {
+	background-image: url(https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf59cfff9399296e408b5a13a8d26308&auto=format&fit=crop&w=1386&q=80);
+}
+
+.image8 {
+	background-image: url(https://images.unsplash.com/photo-1496871455396-14e56815f1f4?ixlib=rb-0.3.5&s=2460fc20c6ed6192b7b5e1b6a2d375bf&auto=format&fit=crop&w=617&q=80);
+}
+
+.image9 {
+	background-image: url(https://images.unsplash.com/photo-1502988632461-f68f5b4f415a?ixlib=rb-0.3.5&s=ebe94070863085e5b20d94a618f96518&auto=format&fit=crop&w=1534&q=80);
+}
+
+/*Crop all images the same size!!!!!!!!!*/
+.image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+}
