@@ -5,13 +5,13 @@ var mongoose    = require("mongoose");
 var Campground  = require("./models/campground");
 var seedDB      = require("./seeds");
 var Comment     = require("./models/comment");
-
+var path        = require("path");
 
 
 mongoose.connect("mongodb://localhost/yelp_camp_v5");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
-
+app.use('/public', express.static(path.join(__dirname + '/public')));
 // seeding the DB
 seedDB();
 
