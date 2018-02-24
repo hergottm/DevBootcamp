@@ -32,7 +32,10 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
+app.use(function(req, res, next){
+    res.locals.currentUser = req.user;
+    next();
+})
 
 
 app.get("/", function(req, res){
@@ -53,7 +56,7 @@ app.get("/campgrounds", function(req, res){
 });
 
 // CREATE - add new campground to DB
-app.post("/campgrounds", function(req,res){
+app.post("/campgrounds", isLogginIn, function(req,res){
     // get data from form and add to campgrounds array
     var name = req.body.name;
     var image = req.body.image;
@@ -93,7 +96,7 @@ app.get("/campgrounds/:id", function(req, res) {
 // COMMENTS ROUTES
 // =================================
 
-app.get("/campgrounds/:id/comments/new", function(req, res) {
+app.get("/campgrounds/:id/comments/new", isLogginIn, function(req, res) {
     Campground.findById(req.params.id, function(error, campground){
        if(error){
            console.log(error);
@@ -103,7 +106,7 @@ app.get("/campgrounds/:id/comments/new", function(req, res) {
     });
 });
 
-app.post("/campgrounds/:id/comments", function(req, res){
+app.post("/campgrounds/:id/comments", isLogginIn, function(req, res){
     // lookup campground using ID
     Campground.findById(req.params.id, function(error, campground) {
         if(error){
@@ -161,6 +164,18 @@ app.post("/login", passport.authenticate("local",
 
 })
 
+// logic route
+app.get("/logout", function(req, res) {
+    req.logout();
+    res.redirect("/login")
+})
+
+function isLogginIn(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("/login");
+}
 
 // listener
 app.listen(process.env.PORT, process.env.IP, function(){
