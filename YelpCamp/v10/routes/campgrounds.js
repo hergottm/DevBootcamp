@@ -42,6 +42,7 @@ router.get("/new", isLogginIn,function(req, res) {
     res.render("campgrounds/new");
 });
 
+
 // SHOW - shows more info about one campground
 router.get("/:id", function(req, res) {
     // find campground with provided ID
@@ -55,6 +56,18 @@ router.get("/:id", function(req, res) {
        }
     });
 });
+
+
+// EDIT CAMPGROUND ROUTE
+router.get("/:id/edit", function(req, res) {
+    Campground.findById(req.params.id, function(error, foundCampground){
+            res.render("campgrounds/edit", {camground: foundCampground});
+    });
+});
+
+
+// UPDATE CAMPGROUND ROUTE
+
 
 //middleware
 function isLogginIn(req, res, next){
