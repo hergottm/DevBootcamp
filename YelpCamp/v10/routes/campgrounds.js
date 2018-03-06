@@ -60,13 +60,39 @@ router.get("/:id", function(req, res) {
 
 // EDIT CAMPGROUND ROUTE
 router.get("/:id/edit", function(req, res) {
-    Campground.findById(req.params.id, function(error, foundCampground){
-            res.render("campgrounds/edit", {camground: foundCampground});
-    });
+    //is user logged in
+    if(req.isAuthenticated()){
+        Campground.findById(req.params.id, function(error, foundCampground){
+            if(error){
+                res.redirect("/campgrounds");
+            } else {
+                if(foundCampground.author.id.equals(req.user._id)){
+                    res.render("campgrounds/edit", {campground: foundCampground});
+                } else {
+                    res.send("You do not have permission to do that!!");
+                }
+            }
+        });
+    } else {
+        // does user own the campground?
+        res.send("You need to be logged in to do that!!");
+    }
 });
 
-
 // UPDATE CAMPGROUND ROUTE
+router.put("/:id", function(req, res){
+   // find and update the correct campground
+   Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(error, updatedCampground){
+      if(error){
+          res.redirect("/campgrounds");
+      } else {
+          res.redirect("/campgrounds/" + req.params.id);
+      } 
+   });
+});
+
+// DELETE CAMGROUND ROUTE
+
 
 
 //middleware
