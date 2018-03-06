@@ -91,8 +91,16 @@ router.put("/:id", function(req, res){
    });
 });
 
-// DELETE CAMGROUND ROUTE
-
+// DESTROY CAMGROUND ROUTE
+router.delete("/:id", function(req, res){
+    Campground.findByIdAndRemove(req.params.id, function(error){
+        if(error){
+            res.redirect("/campgrounds");
+        } else {
+            res.redirect("/campgrounds");
+        }
+    });
+});
 
 
 //middleware
