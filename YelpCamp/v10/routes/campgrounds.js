@@ -59,28 +59,14 @@ router.get("/:id", function(req, res) {
 
 
 // EDIT CAMPGROUND ROUTE
-router.get("/:id/edit", function(req, res) {
-    //is user logged in
-    if(req.isAuthenticated()){
-        Campground.findById(req.params.id, function(error, foundCampground){
-            if(error){
-                res.redirect("/campgrounds");
-            } else {
-                if(foundCampground.author.id.equals(req.user._id)){
-                    res.render("campgrounds/edit", {campground: foundCampground});
-                } else {
-                    res.send("You do not have permission to do that!!");
-                }
-            }
-        });
-    } else {
-        // does user own the campground?
-        res.send("You need to be logged in to do that!!");
-    }
+router.get("/:id/edit", checkCampgroundOwnership,function(req, res) {
+    Campground.findById(req.params.id, function(error, foundCampground){
+        res.render("campgrounds/edit", {campground: foundCampground});
+    });
 });
 
 // UPDATE CAMPGROUND ROUTE
-router.put("/:id", function(req, res){
+router.put("/:id", checkCampgroundOwnership, function(req, res){
    // find and update the correct campground
    Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(error, updatedCampground){
       if(error){
@@ -92,7 +78,7 @@ router.put("/:id", function(req, res){
 });
 
 // DESTROY CAMGROUND ROUTE
-router.delete("/:id", function(req, res){
+router.delete("/:id", checkCampgroundOwnership, function(req, res){
     Campground.findByIdAndRemove(req.params.id, function(error){
         if(error){
             res.redirect("/campgrounds");
@@ -109,6 +95,24 @@ function isLogginIn(req, res, next){
         return next();
     }
     res.redirect("/login");
+}
+
+function checkCampgroundOwnership(req,res,next){
+    if(req.isAuthenticated()){
+        Campground.findById(req.params.id, function(error, foundCampground){
+            if(error){
+                res.redirect("back");
+            } else {
+                if(foundCampground.author.id.equals(req.user._id)){
+                    next();
+                } else {
+                    res.redirect("back");
+                }
+            }
+        });
+    } else {
+        res.redirect("back");
+    }
 }
 
 module.exports = router;
