@@ -4,7 +4,7 @@ var Campground      = require("../models/campground");
 var Comment         = require("../models/comment");
 var middleware      = require("../middleware");
 
-router.get("/new", middleware.isLogginIn, function(req, res) {
+router.get("/new", middleware.isLoggedIn, function(req, res) {
     // Find campground by ID
     Campground.findById(req.params.id, function(error, campground){
        if(error){
@@ -16,7 +16,7 @@ router.get("/new", middleware.isLogginIn, function(req, res) {
 });
 
 // Comments Create
-router.post("/", middleware.isLogginIn, function(req, res){
+router.post("/", middleware.isLoggedIn, function(req, res){
     // lookup campground using ID
     Campground.findById(req.params.id, function(error, campground) {
         if(error){

@@ -46,7 +46,7 @@ middlewareObj.checkCommentOwnership = function (req,res,next){
     }
 }
 
-middlewareObj.isLogginIn = function (req, res, next){
+middlewareObj.isLoggedIn = function (req, res, next){
     if(req.isAuthenticated()){
         return next();
     }
